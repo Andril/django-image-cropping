@@ -45,7 +45,7 @@ var image_cropping = (function ($) {
         });
 
         var options = {
-          minSize: [5, 5],
+          minSize: [min_width, min_height],
           keySupport: false,
           trueSize: [org_width, org_height],
           onSelect: update_selection($this),
