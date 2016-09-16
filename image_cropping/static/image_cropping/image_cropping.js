@@ -185,14 +185,6 @@ var image_cropping = (function ($) {
 })(jQuery);
 
 jQuery(function() {
-  var image_cropping_jquery_url = jQuery('.image-ratio:first').data('jquery-url');
-  if (image_cropping_jquery_url == "None") {
-    // JQUERY_URL is set to `none`. We therefore use the existing version of
-    // jQuery and leave it otherwise untouched.
-    jQ = jQuery;
-  } else {
-    // JQUERY_URL is specified. Image Cropping's jQuery is included in no conflict mode,
-    jQ = jQuery.noConflict(true);
-  }
+  jQ = jQuery;
   jQ(function() {image_cropping.init();});
 });
